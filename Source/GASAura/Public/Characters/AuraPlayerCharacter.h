@@ -13,5 +13,6 @@ UCLASS()
 class GASAURA_API AAuraPlayerCharacter : public AAuraCharacterBase
 {
 	GENERATED_BODY()
-	
+
+	AAuraPlayerCharacter();
 };
