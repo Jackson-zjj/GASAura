@@ -15,9 +15,7 @@ class GASAURA_API AAuraEnemyCharacter : public AAuraCharacterBase, public IEnemy
 {
 	GENERATED_BODY()
 public:
+	AAuraEnemyCharacter();
 	virtual void HighLightActor() override;
 	virtual void UnHighLightActor() override;
-
-	UPROPERTY(BlueprintReadOnly)
-	bool bHighLighted = false;
 };
