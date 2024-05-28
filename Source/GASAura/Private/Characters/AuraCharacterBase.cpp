@@ -15,6 +15,12 @@ AAuraCharacterBase::AAuraCharacterBase()
 	
 }
 
+UAbilitySystemComponent* AAuraCharacterBase::GetAbilitySystemComponent() const
+{
+	// 通过const函数去获取私有成员
+	return AbilitySystemComponent;
+}
+
 // Called when the game starts or when spawned
 void AAuraCharacterBase::BeginPlay()
 {
