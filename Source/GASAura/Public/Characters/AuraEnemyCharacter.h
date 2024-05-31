@@ -16,6 +16,11 @@ class GASAURA_API AAuraEnemyCharacter : public AAuraCharacterBase, public IEnemy
 	GENERATED_BODY()
 public:
 	AAuraEnemyCharacter();
+	//~ Begin Enemy Interface
 	virtual void HighLightActor() override;
 	virtual void UnHighLightActor() override;
+	//~ End Enemy Interface
+
+protected:
+	virtual void BeginPlay() override;
 };

@@ -13,6 +13,14 @@ UCLASS()
 class GASAURA_API AAuraPlayerCharacter : public AAuraCharacterBase
 {
 	GENERATED_BODY()
-
+	
+public:
 	AAuraPlayerCharacter();
+
+	virtual void BeginPlay() override;
+	virtual void PossessedBy(AController* NewController) override;
+	virtual void OnRep_PlayerState() override;
+
+private:
+	void InitAbilityActorInfo();
 };
